@@ -33,4 +33,18 @@ return false;
 }
 
 
-if()
+if(hasCollided(bullet, wall))
+{
+  bullet.velocityX = 0;
+  var damage = 0.5 weight * speed * speed/(thickeness * thickeness *thickness);
+|
+ if (damege > 10)
+{
+  wall.shapeColor = color(255,0,0);
+}
+
+if(damege < 10)
+{
+  wall.shapeColor = color(0,255,0)
+}
+}
